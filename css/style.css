@@ -1064,6 +1064,11 @@ footer{
 
 }
 
+.footer-grid li a{
+    color:inherit;
+    text-decoration:none;
+}
+
 .footer-grid li:hover{
 
     color:var(--accent);
