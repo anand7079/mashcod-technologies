@@ -109,7 +109,7 @@ consultationForm.addEventListener('submit', async (event) => {
     try {
         await emailjs.send('service_8ciyex8', 'template_pm9a967', templateParams);
         consultationForm.reset();
-        showStatus(`Thank you! Your ${isTrainingRequest ? 'training registration' : 'consultation request'} has been sent successfully.`, 'success');
+        showStatus('Thanks for contacting us. We will get in touch soon.', 'success');
     } catch (error) {
         console.error('EmailJS error:', error);
         const reason = error?.text || error?.message || (error?.status ? `Request status: ${error.status}` : 'Unknown error');

@@ -1304,6 +1304,23 @@ section h2{
 
     color:#17713a;
 
+    position:fixed;
+    top:50%;
+    left:50%;
+    z-index:1100;
+    width:min(90vw,440px);
+    min-height:0;
+    margin:0;
+    padding:24px 28px;
+    transform:translate(-50%,-50%);
+    border:1px solid #a7d7b5;
+    border-radius:16px;
+    background:#f0fff4;
+    box-shadow:0 20px 60px rgba(0,0,0,.28);
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+
 }
 
 .form-status.error{
