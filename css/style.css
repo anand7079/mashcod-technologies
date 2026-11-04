@@ -49,15 +49,15 @@ ul{
 
 :root{
 
-    --primary:#a8521a;
-    --secondary:#f5b97a;
-    --accent:#d96c1a;
+    --primary:#b45309;
+    --secondary:#fbbf24;
+    --accent:#f97316;
 
     --dark:#1B1B1B;
 
     --white:#ffffff;
 
-    --light:#fff2e2;
+    --light:#fff4e5;
 
     --shadow:0 10px 30px rgba(0,0,0,.10);
 
@@ -171,15 +171,7 @@ nav a:hover::after{
 
     height:100vh;
 
-    background:
-
-    linear-gradient(rgba(217,108,26,.72),rgba(217,108,26,.72)),
-
-    url("photos/test.jpg");
-
-    background-size:cover;
-
-    background-position:center;
+    background:linear-gradient(135deg,#f59e0b 0%,#ea580c 100%);
 
     display:flex;
 
@@ -211,7 +203,7 @@ nav a:hover::after{
 
     border-radius:40px;
 
-    background:rgba(255,255,255,.18);
+    background:rgba(255,255,255,.16);
 
     border:1px solid rgba(255,255,255,.25);
 
@@ -269,7 +261,7 @@ nav a:hover::after{
 
     padding:16px 34px;
 
-    background:var(--accent);
+    background:#1769d2;
 
     color:white;
 
@@ -287,7 +279,7 @@ nav a:hover::after{
 
     transform:translateY(-5px);
 
-    background:#ef6c00;
+    background:#0f4fa8;
 
 }
 
@@ -501,7 +493,7 @@ nav a:hover::after{
 .contact-options-actions .btn:focus,
 .contact-options-actions .btn:active{
 
-    background:var(--accent);
+    background:#1769d2;
 
     color:white;
 
@@ -511,7 +503,7 @@ nav a:hover::after{
 .contact-options-actions .btn.secondary:focus,
 .contact-options-actions .btn.secondary:active{
 
-    background:var(--accent) !important;
+    background:#1769d2 !important;
 
     color:white !important;
 
@@ -650,8 +642,8 @@ section h2{
 
     background:linear-gradient(
         135deg,
-        #f4c38e,
-        #eaa55a
+        #fbbf24,
+        #f97316
     );
 
     color:var(--dark);
@@ -904,8 +896,8 @@ section h2{
 
     background:linear-gradient(
         135deg,
-        #f4c38e,
-        #eaa55a
+        #fbbf24,
+        #f97316
     );
 
     color:var(--dark);
