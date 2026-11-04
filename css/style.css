@@ -169,7 +169,7 @@ nav a:hover::after{
 
 .hero{
 
-    height:100vh;
+    min-height:100vh;
 
     background:linear-gradient(135deg,#f59e0b 0%,#ea580c 100%);
 
@@ -178,6 +178,7 @@ nav a:hover::after{
     justify-content:center;
 
     align-items:center;
+    padding:125px 0 55px;
 
 }
 
@@ -189,10 +190,31 @@ nav a:hover::after{
 
 .hero .container{
 
-    text-align:center;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:28px;
+    color:#2b2118;
 
-    color:white;
+}
 
+.hero-panel{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    padding:38px;
+    border:1px solid rgba(255,255,255,.65);
+    border-radius:24px;
+    background:rgba(255,255,255,.95);
+    box-shadow:0 18px 45px rgba(115,49,0,.18);
+}
+
+.hero-panel .hero-buttons{
+    margin-top:auto;
+    padding-top:24px;
+}
+
+.training-panel{
+    background:rgba(255,250,240,.97);
 }
 
 .badge{
@@ -203,11 +225,10 @@ nav a:hover::after{
 
     border-radius:40px;
 
-    background:rgba(255,255,255,.16);
+    background:#fff1d6;
 
-    border:1px solid rgba(255,255,255,.25);
-
-    backdrop-filter:blur(10px);
+    border:1px solid #fed7aa;
+    color:var(--primary);
 
     margin-bottom:25px;
 
@@ -219,25 +240,33 @@ nav a:hover::after{
 
 .hero h1{
 
-    font-size:58px;
+    font-size:42px;
 
     line-height:1.2;
 
     margin-bottom:25px;
 
     font-weight:700;
+    color:#8a370b;
 
+}
+
+.hero-panel h2{
+    text-align:left;
+    color:#8a370b;
+    font-size:38px;
+    line-height:1.2;
+    margin-bottom:25px;
 }
 
 .hero p{
 
-    width:70%;
+    width:100%;
+    margin:0 auto 32px;
 
-    margin:auto;
+    font-size:17px;
 
-    font-size:19px;
-
-    margin-bottom:40px;
+    color:#51463c;
 
 }
 
@@ -249,7 +278,7 @@ nav a:hover::after{
 
     display:flex;
 
-    justify-content:center;
+    justify-content:flex-start;
 
     gap:20px;
 
@@ -1088,10 +1117,23 @@ nav ul{
 
 }
 
+.hero .container{
+    grid-template-columns:1fr;
+    max-width:760px;
+}
+
+.hero-panel{
+    padding:30px;
+}
+
 .hero h1{
 
     font-size:36px;
 
+}
+
+.hero-panel h2{
+    font-size:32px;
 }
 
 .hero p{
@@ -1106,7 +1148,7 @@ nav ul{
 
     flex-direction:column;
 
-    align-items:center;
+    align-items:stretch;
 
 }
 
